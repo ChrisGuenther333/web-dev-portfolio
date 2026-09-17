@@ -1,0 +1,81 @@
+/* ---------- GLOBAL ---------- */
+
+:root {
+    --black: #100604;
+    --white: #fef5ef;
+    --blue: #688fbc;
+    --gray: #353d4a;
+    --light-gray: #8c94a4;
+
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-VariableFont.ttf);
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Italic-VariableFont.ttf);
+    font-style: italic;
+    font-display: swap;
+}
+
+body {
+    color: var(--black);
+    font-family: 'Open Sans', 'Gill Sans', sans-serif;
+}
+
+/* ---------- HOME PAGE ---------- */
+
+.home-split {
+    display: flex;
+    flex-direction: column;
+}
+
+.split-profile {
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.split-profile img {
+    border-radius: 22px;
+    max-width: 80%;
+    height: auto;
+}
+.split-profile h1 span {
+    display: block;
+}
+.split-profile a {
+    background-color: var(--gray);
+    color: var(--white);
+}
+
+.split-profile div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.split-summary {
+    background-color: var(--light-gray);
+}
+
+.split-summary .button-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.split-summary a {
+    background-color: var(--gray);
+    color: var(--white);
+}
+.split-summary a:last-child {
+    background-color: var(--blue);
+    color: var(--black)
+}
