@@ -3,34 +3,373 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/output.css">
     <title>Home</title>
 </head>
 <body>
-<div class="home-split">
-    <div class="split-profile">
-        <img src="./assets/images/pfp.webp" alt="Chris Guenther">
-        <h1>Chris Guenther<span>Web Developer</span></h1>
-        <a href="/contact.html">Email me</a>
-        <div>
-            <a href="https://www.linkedin.com/in/chris-guenther-844b291ba" target="_blank"><img src="./assets/images/logos/linkedin.webp" alt="LinkedIn logo"></a>
-            <a href="https://github.com/ChrisGuenther333" target="_blank"><img src="./assets/images/logos/git.webp" alt="GitHub logo"></a>
+<section class="relative pb-24 bg-gray-900 overflow-hidden">
+  <nav class="relative py-6 bg-white mb-20 sm:mb-32 z-50">
+    <div class="container px-4 mx-auto">
+      <div class="flex items-center relative">
+        <a class="inline-block text-lg font-bold" href="#">
+          <img class="h-10" src="saturn-assets/logos/logo-saturn-dark.svg" alt="" width="auto">
+        </a>
+        <div class="xl:hidden ml-auto">
+          <button x-on:click="mobileNavOpen = !mobileNavOpen" class="flex w-12 h-12 items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-md transition duration-200">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M3 6H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M3 18H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
         </div>
-        <div class="line"></div>
-    </div>
-    <div class="split-summary">
-      <div class="line"></div>
-        <p class="big-text">Howdy!</p>
-        <p>I’m a Utah-based web developer with 3 years of hands-on experience building responsive, interactive websites and web apps.
-            I specialize in JavaScript, CSS, and HTML5, with experience in several other technologies.
-            I have a strong background in customer service and take pride in creating vibrant environments and positive experiences for clients and colleagues alike.
-            My work has earned several 5-star reviews for my employers, and I’d love the opportunity to do the same for you. Thanks for stopping by!</p>
-        <div class="button-wrap">
-            <a href="./resume.html">Resume</a>
-            <a href="./about.html">More about me</a>
-            <a href="./portfolio.html">Portfolio</a>
+        <ul class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden xl:flex lg:w-auto lg:space-x-12">
+          <li><a class="inline-block text-sm text-gray-900 hover:text-orange-900 font-medium" href="#">Skills</a></li>
+          <li><a class="inline-block text-sm text-gray-900 hover:text-orange-900 font-medium" href="#">Portfolio</a></li>
+          <li><a class="inline-block text-sm text-gray-900 hover:text-orange-900 font-medium" href="#">Work Experience</a></li>
+        </ul>
+        <div class="hidden xl:block ml-auto">
+          <div class="flex items-center">
+            <a class="relative group inline-block py-3 px-4 text-sm font-semibold text-orange-900 hover:text-orange-50 bg-orange-50 rounded-md overflow-hidden transition duration-300" href="#">
+              <span class="relative">Contact</span>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </nav>
+  <div class="relative">
+    <img class="absolute top-0 right-0 mt-32 lg:-mt-10" src="saturn-assets/images/headers/star-dark-right.svg" alt="">
+    <div class="relative container px-4 mx-auto">
+      <div class="max-w-3xl">
+        <div class="pl-8 md:pl-12 lg:pl-24 border-l-2 border-gray-700 mb-16">
+          <h1 class="font-heading text-4xl xs:text-6xl md:text-8xl xl:text-10xl font-bold text-white mb-8 sm:mb-14">
+            <span>Chris Guenther</span>
+            <span class="font-serif italic">Web Developer</span>
+          </h1>
+        </div>
+        <div class="lg:flex mb-20 items-center">
+          <div class="max-w-md mb-12 lg:mb-0 lg:mr-8">
+            <p class="text-xl font-semibold text-gray-300">Utah-based web developer with 3 years of hands-on experience building reponsive and interactive websites.</p>
+          </div>
+          <div>
+            <div>
+              <a class="relative group inline-block w-full sm:w-auto py-4 px-6 text-orange-50 font-semibold bg-blue-800 rounded-md overflow-hidden" href="#">
+                <div class="absolute top-0 right-full w-full h-full bg-orange-900 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
+                <div class="relative flex items-center justify-center">
+                  <span class="mr-4">Contact Chris</span>
+                  <span>
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.83 5.29L2.59 1.05C2.49704 0.956274 2.38644 0.881879 2.26458 0.83111C2.14272 0.780342 2.01202 0.754204 1.88 0.754204C1.74799 0.754204 1.61729 0.780342 1.49543 0.83111C1.37357 0.881879 1.26297 0.956274 1.17 1.05C0.983753 1.23736 0.879211 1.49082 0.879211 1.755C0.879211 2.01919 0.983753 2.27264 1.17 2.46L4.71 6L1.17 9.54C0.983753 9.72736 0.879211 9.98082 0.879211 10.245C0.879211 10.5092 0.983753 10.7626 1.17 10.95C1.26344 11.0427 1.37426 11.116 1.4961 11.1658C1.61794 11.2155 1.7484 11.2408 1.88 11.24C2.01161 11.2408 2.14207 11.2155 2.26391 11.1658C2.38575 11.116 2.49656 11.0427 2.59 10.95L6.83 6.71C6.92373 6.61704 6.99813 6.50644 7.04889 6.38458C7.09966 6.26272 7.1258 6.13201 7.1258 6C7.1258 5.86799 7.09966 5.73728 7.04889 5.61543C6.99813 5.49357 6.92373 5.38297 6.83 5.29Z" fill="#FFF2EE"></path>
+                    </svg>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:flex items-center justify-between">
+        <div class="flex mb-12 lg:mb-0 items-center">
+          <div>
+            <span class="text-3xl sm:text-5xl font-semibold text-orange-900">200+</span>
+            <span class="block text-sm text-gray-400">Websites Worked On</span>
+          </div>
+          <div class="h-12 w-px mx-14 bg-orange-300"></div>
+          <div>
+            <span class="text-3xl sm:text-5xl font-semibold text-orange-900">20+</span>
+            <span class="block text-sm text-gray-400">5-Star Reviews</span>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="mr-8 mt-2 text-gray-400">
+            <svg width="84" height="10" viewBox="0 0 84 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 4.25C0.585786 4.25 0.25 4.58579 0.25 5C0.25 5.41421 0.585786 5.75 1 5.75L1 4.25ZM84 5.00001L76.5 0.669879L76.5 9.33013L84 5.00001ZM1 5.75L77.25 5.75001L77.25 4.25001L1 4.25L1 5.75Z" fill="currentColor"></path>
+            </svg>
+          </div>
+          <div class="max-w-sm xl:max-w-lg">
+            <p class="text-gray-400">Today, we're a team of 200+ who are building the future together by using cutting-edge technology</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="relative py-20 md:py-32 overflow-hidden">
+  <img class="absolute top-0 right-0 md:mt-10 -mr-20 md:-mr-0" src="saturn-assets/images/stats/star-circle.svg" alt="">
+  <img class="absolute bottom-0 left-0" src="saturn-assets/images/stats/left-blue-light.png" alt="">
+  <div class="relative container px-4 mx-auto">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex flex-wrap -mx-4 mb-24 items-end">
+        <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+          <div class="max-w-md md:max-w-lg">
+            <span class="inline-block py-1 px-3 mb-5 text-xs font-semibold text-orange-900 bg-orange-50 rounded-full">SKILLS</span>
+            <h1 class="font-heading text-5xl xs:text-6xl md:text-7xl font-bold">
+              <span>Technologies I've Worked With</span>
+            </h1>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 px-4">
+          <div class="max-w-md lg:ml-auto lg:pb-3">
+            <p class="text-xl text-gray-500 font-semibold">Nisi eu pellentesque felis volutpat aliquet pulvinar sed. Vitae fames vestibulum urna vel odio mauris urna orci est.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -mx-4">
+        <div class="relative w-full md:w-1/3 px-4 pb-9 md:pb-0 mb-12 lg:mb-0">
+          <div class="hidden md:block absolute top-1/2 right-0 w-px h-28 bg-gray-200 transform -translate-y-1/2"></div>
+          <div class="md:hidden absolute bottom-0 left-1/2 h-px w-40 bg-gray-200 transform -translate-x-1/2"></div>
+          <div class="text-center">
+            <span class="block text-5xl lg:text-7xl font-bold text-gray-900 mb-5">300+</span>
+            <span class="text-xl text-gray-500">PRODUCTS</span>
+          </div>
+        </div>
+        <div class="relative w-full md:w-1/3 px-4 pb-9 md:pb-0 mb-12 lg:mb-0">
+          <div class="hidden md:block absolute top-1/2 right-0 w-px h-28 bg-gray-200 transform -translate-y-1/2"></div>
+          <div class="md:hidden absolute bottom-0 left-1/2 h-px w-40 bg-gray-200 transform -translate-x-1/2"></div>
+          <div class="text-center">
+            <span class="block text-5xl lg:text-7xl font-bold text-gray-900 mb-5">85</span>
+            <span class="text-xl text-gray-500">WEB TEMPLATE</span>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 px-4">
+          <div class="text-center">
+            <span class="block text-5xl lg:text-7xl font-bold text-gray-900 mb-5">215</span>
+            <span class="text-xl text-gray-500">MOBILE TEMPLATE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="relative py-20 md:py-32 overflow-hidden bg-gray-100">
+  <div class="container px-4 mx-auto">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-2xl mx-auto mb-18 text-center">
+        <h1 class="font-heading text-5xl xs:text-6xl md:text-7xl font-bold text-gray-900 mb-8">
+          <span>Portfolio</span>
+        </h1>
+        <p class="text-lg text-gray-500">We provide experienced advisors to help your company become more successful in the future.</p>
+      </div>
+      <div class="flex flex-wrap -mx-4 -mb-8">
+        <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-8">
+          <div class="max-w-xs md:max-w-none mx-auto h-full pt-3 px-3 pb-5 bg-white">
+            <img class="block w-full mb-4 h-64 object-cover" src="saturn-assets/images/team/photo-team-2.png" alt="">
+            <div class="text-center">
+              <h5 class="text-xl font-bold">Cameron Williamson</h5>
+              <span class="text-sm font-bold text-gray-400">Founder</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-8">
+          <div class="max-w-xs md:max-w-none mx-auto h-full pt-3 px-3 pb-5 bg-white">
+            <img class="block w-full mb-4 h-64 object-cover" src="saturn-assets/images/team/photo-team-3.png" alt="">
+            <div class="text-center">
+              <h5 class="text-xl font-bold">Annette Black</h5>
+              <span class="text-sm font-bold text-gray-400">Co-Founder</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-8">
+          <div class="max-w-xs md:max-w-none mx-auto h-full pt-3 px-3 pb-5 bg-white">
+            <img class="block w-full mb-4 h-64 object-cover" src="saturn-assets/images/team/photo-team-4.png" alt="">
+            <div class="text-center">
+              <h5 class="text-xl font-bold">Robert Fox</h5>
+              <span class="text-sm font-bold text-gray-400">Art Director</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-8">
+          <div class="max-w-xs md:max-w-none mx-auto h-full pt-3 px-3 pb-5 bg-white">
+            <img class="block w-full mb-4 h-64 object-cover" src="saturn-assets/images/team/photo-team-5.png" alt="">
+            <div class="text-center">
+              <h5 class="text-xl font-bold">Eleanor Pena</h5>
+              <span class="text-sm font-bold text-gray-400">Project Manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-8">
+          <div class="max-w-xs md:max-w-none mx-auto h-full pt-3 px-3 pb-5 bg-white">
+            <img class="block w-full mb-4 h-64 object-cover" src="saturn-assets/images/team/photo-team-6.png" alt="">
+            <div class="text-center">
+              <h5 class="text-xl font-bold">Darlene Robertson</h5>
+              <span class="text-sm font-bold text-gray-400">UI Designer</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-8">
+          <div class="max-w-xs md:max-w-none mx-auto h-full pt-3 px-3 pb-5 bg-white">
+            <img class="block w-full mb-4 h-64 object-cover" src="saturn-assets/images/team/photo-team-7.png" alt="">
+            <div class="text-center">
+              <h5 class="text-xl font-bold">Courtney Henry</h5>
+              <span class="text-sm font-bold text-gray-400">Co-Founder</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-8">
+          <div class="max-w-xs md:max-w-none mx-auto h-full pt-3 px-3 pb-5 bg-white">
+            <img class="block w-full mb-4 h-64 object-cover" src="saturn-assets/images/team/photo-team-8.png" alt="">
+            <div class="text-center">
+              <h5 class="text-xl font-bold">Floyd Miles</h5>
+              <span class="text-sm font-bold text-gray-400">Graphic Designer</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-8">
+          <div class="max-w-xs md:max-w-none mx-auto h-full pt-3 px-3 pb-5 bg-white">
+            <img class="block w-full mb-4 h-64 object-cover" src="saturn-assets/images/team/photo-team-1.png" alt="">
+            <div class="text-center">
+              <h5 class="text-xl font-bold">Kristin Watson</h5>
+              <span class="text-sm font-bold text-gray-400">Illustrator</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="relative py-20 md:py-32 bg-gray-800 overflow-hidden">
+  <img class="absolute top-0 right-0 md:mt-10 -mr-20 md:-mr-0" src="saturn-assets/images/stats/star-dark.svg" alt="">
+  <div class="relative container px-4 mx-auto">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex flex-wrap -mx-4 mb-24 items-end">
+        <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+          <div class="max-w-md md:max-w-lg">
+            <span class="inline-block py-1 px-3 mb-5 text-xs font-semibold text-orange-900 bg-orange-50 rounded-full">RESUME</span>
+            <h1 class="font-heading text-5xl xs:text-6xl md:text-7xl text-white font-bold">
+              <span>Work Experience</span>
+            </h1>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 px-4">
+          <div class="max-w-md lg:ml-auto lg:pb-3">
+            <p class="text-xl text-gray-200 font-semibold">Nisi eu pellentesque felis volutpat aliquet pulvinar sed. Vitae fames vestibulum urna vel odio mauris urna orci est.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -mx-4">
+        <div class="relative w-full md:w-1/3 px-4 pb-9 md:pb-0 mb-12 lg:mb-0">
+          <div class="hidden md:block absolute top-1/2 right-0 w-px h-28 bg-gray-200 transform -translate-y-1/2"></div>
+          <div class="md:hidden absolute bottom-0 left-1/2 h-px w-40 bg-gray-200 transform -translate-x-1/2"></div>
+          <div class="text-center">
+            <span class="block text-5xl lg:text-7xl font-bold text-gray-50 mb-5">300+</span>
+            <span class="text-xl text-gray-200">PRODUCTS</span>
+          </div>
+        </div>
+        <div class="relative w-full md:w-1/3 px-4 pb-9 md:pb-0 mb-12 lg:mb-0">
+          <div class="hidden md:block absolute top-1/2 right-0 w-px h-28 bg-gray-200 transform -translate-y-1/2"></div>
+          <div class="md:hidden absolute bottom-0 left-1/2 h-px w-40 bg-gray-200 transform -translate-x-1/2"></div>
+          <div class="text-center">
+            <span class="block text-5xl lg:text-7xl font-bold text-gray-50 mb-5">85</span>
+            <span class="text-xl text-gray-200">WEB TEMPLATE</span>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 px-4">
+          <div class="text-center">
+            <span class="block text-5xl lg:text-7xl font-bold text-gray-50 mb-5">215</span>
+            <span class="text-xl text-gray-200">MOBILE TEMPLATE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="relative py-20 md:py-32 overflow-hidden">
+  <img class="absolute top-0 right-0 -mt-24" src="saturn-assets/images/contact/light-orange-right.png" alt="">
+  <div class="relative container px-4 mx-auto">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-2xl mb-24">
+        <span class="inline-block py-1 px-3 mb-4 text-xs font-semibold text-orange-900 bg-orange-50 rounded-full">CONTACT CHRIS</span>
+        <h1 class="max-w-md font-heading text-5xl xs:text-6xl font-bold text-gray-900 mb-4">
+          <span>Ready to Work Together?</span>
+        </h1>
+        <p class="text-xl text-gray-500 font-semibold">Drop Chris a line</p>
+      </div>
+      <div class="flex flex-wrap -mx-4 items-center">
+        <div class="w-full lg:w-1/2 px-4 mb-20 lg:mb-0">
+          <div class="flex mb-16 items-center">
+            <div class="flex flex-shrink-0 mr-5 sm:mr-8 items-center justify-center p-1 w-16 sm:w-20 h-16 sm:h-20 rounded-full bg-yellow-200">
+              <img src="saturn-assets/images/contact/icon-email.svg" alt="">
+            </div>
+            <div>
+              <span class="sm:text-lg text-gray-500">Email</span>
+              <span class="block text-lg sm:text-2xl font-semibold text-gray-900">chrisguenther333@gmail.com</span>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="flex flex-shrink-0 mr-5 sm:mr-8 items-center justify-center p-1 w-16 sm:w-20 h-16 sm:h-20 rounded-full bg-blue-200">
+              <img src="saturn-assets/images/contact/icon-phone.svg" alt="">
+            </div>
+            <div>
+              <span class="sm:text-lg text-gray-500">Text</span>
+              <span class="block text-lg sm:text-2xl font-semibold text-gray-900">(385) 219-7754</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 px-4">
+          <div class="max-w-lg lg:max-w-xl lg:ml-auto">
+            <h4 class="text-2xl font-bold text-gray-900 mb-8">Drop us a line</h4>
+            <form action="">
+              <div class="flex flex-wrap -mx-4 mb-6">
+                <div class="w-full lg:w-1/2 px-4 mb-6 lg:mb-0">
+                  <div>
+                    <label class="block mb-1.5 text-sm font-semibold" for="">
+                      <span>Full Name</span>
+                      <span class="text-red-600">*</span>
+                    </label>
+                    <input class="w-full py-3 px-4 text-sm text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="text" placeholder="Jovanca Azalea">
+                  </div>
+                </div>
+                <div class="w-full lg:w-1/2 px-4">
+                  <div>
+                    <label class="block mb-1.5 text-sm font-semibold" for="">
+                      <span>Email</span>
+                      <span class="text-red-600">*</span>
+                    </label>
+                    <input class="w-full py-3 px-4 text-sm text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="text" placeholder="Type your email">
+                  </div>
+                </div>
+              </div>
+              <div class="mb-9">
+                <label class="block mb-1.5 text-sm font-semibold" for="">
+                  <span>Message</span>
+                  <span class="text-red-600">*</span>
+                </label>
+                <textarea class="w-full h-12 py-3 px-4 resize-none text-sm text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg" type="text" placeholder="Type your email"></textarea>
+              </div>
+              <button class="relative group inline-block flex-shrink-0 w-full sm:w-auto py-3 px-5 text-sm font-semibold text-orange-50 bg-orange-900 rounded-md overflow-hidden" type="submit">
+                <div class="absolute top-0 right-full w-full h-full bg-gray-900 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
+                <span class="relative">Submit</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="relative py-20 overflow-hidden">
+  <img class="absolute top-0 left-0" src="saturn-assets/images/footers/blue-light-left.png" alt="">
+  <img class="absolute bottom-0 left-1/2" src="saturn-assets/images/footers/orange-light-bottom.png" alt="">
+  <div class="relative container px-4 mx-auto">
+    <div class="max-w-7xl mx-auto">
+      <div class="pb-8 mb-15 border-b border-gray-100 text-center">
+        <a class="inline-block" href="#">
+          <img class="h-15" src="saturn-assets/logos/logo-saturn-dark.svg" alt="">
+        </a>
+      </div>
+      <div class="flex flex-wrap -mb-5 -mx-6 items-center justify-center">
+        <div class="px-6 mb-5"><a class="inline-block text-gray-900 hover:text-gray-600" href="#">Home</a></div>
+        <div class="px-6 mb-5"><a class="inline-block text-gray-900 hover:text-gray-600" href="#">Skills</a></div>
+        <div class="px-6 mb-5"><a class="inline-block text-gray-900 hover:text-gray-600" href="#">Portfolio</a></div>
+        <div class="px-6 mb-5"><a class="inline-block text-gray-900 hover:text-gray-600" href="#">Work Experience</a></div>
+        <div class="px-6 mb-5"><a class="inline-block text-gray-900 hover:text-gray-600" href="#">Contact</a></div>
+      </div>
+      <div class="mt-15 text-center">
+        <span class="text-gray-500">© 2026 Chris Guenther. All rights reserved.</span>
+      </div>
+    </div>
+  </div>
+</section>
 </body>
 </html>
